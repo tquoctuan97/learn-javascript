@@ -1,18 +1,29 @@
 // Object exericse
 // 1. Create an object student with name is Easy Frontend and age is 18
+
+//If don't know key
+const student = {};
+
+student.name = 'Easy Frontend';
+student.age = 18;
+
+console.log(student);
+
+// If know key
 const student = {
   name: 'Easy Frontend',
+  name: 'Hau Nguyen',
   age: 18,
 };
 
+console.log(student); // {name: 'Hau Nguyen', age: 18}
+
 // 2. Check if an object is empty (means have no key)
-function isObjectEmpty(object) {
-  return Object.keys(object).length === 0;
+function isEmpty(obj) {
+  return Object.keys(obj).length === 0;
 }
-
-const emptyStudent = {};
-
-console.log(isObjectEmpty(student));
+console.log(isEmpty({}));
+console.log(isEmpty({ id: 1 }));
 
 // 3. Get avergare mark of an object
 // Ex: calcAvgMark({math: 10, english: 9}) -> 9
