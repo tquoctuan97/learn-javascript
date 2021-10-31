@@ -9,6 +9,7 @@
 
 // p1: replaceAll
 // p2: split and join
+// ['code','js','is','fun']
 
 function parameterize(str) {
   if (!str.trim()) return -1;
