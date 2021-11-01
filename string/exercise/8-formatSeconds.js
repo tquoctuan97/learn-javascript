@@ -32,9 +32,7 @@ console.log(formatSecondsV1(10));
 function formatSecondsV2(seconds) {
   if (seconds < 0 && seconds > 60) return -1;
 
-  if (!seconds.toString().slice(1)) return `0${seconds}`;
-
-  return seconds.toString();
+  return ('0' + seconds).slice(-2);
 }
 
 console.log(formatSecondsV2(0));
