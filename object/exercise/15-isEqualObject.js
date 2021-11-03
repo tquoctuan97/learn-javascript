@@ -20,7 +20,7 @@ Giả sử kiểu dữ liệu của các thuộc tính của cả 2 objects đ�
 Happy coding!
 
 */
-
+// v1
 function isEqual(obj1, obj2) {
   if (!obj1 && !obj2) return -1;
 
@@ -34,6 +34,34 @@ function isEqual(obj1, obj2) {
 
   return isEqualKeysLength && isEqualValue;
 }
+
+// v2
+function isEqual(obj1, obj2) {
+  if (
+    typeof obj1 !== 'object' ||
+    typeof obj2 !== 'object' ||
+    Array.isArray(obj1) ||
+    Array.isArray(obj2) ||
+    obj1 === null ||
+    obj2 === null
+  )
+    return false;
+
+  if (Object.keys(obj1).length !== Object.keys(obj2).length) return false;
+
+  for (const key in obj1) {
+    if (obj1[key] !== obj2[key]) return false;
+  }
+
+  return true;
+}
+let a = null;
+let b = null;
+
+console.log(isEqual(a, b));
+console.log(isEqual('a', 'a'));
+console.log(isEqual(1, 1));
+console.log(isEqual([], []));
 
 console.log(isEqual({}, {})); // true
 console.log(isEqual({ name: 'Bob' }, { name: 'Alice' })); // false
