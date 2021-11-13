@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1636666551672" clover="3.2.0">
+  <project timestamp="1636666551672" name="All files">
+    <metrics statements="4" coveredstatements="4" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1" elements="11" coveredelements="11" complexity="0" loc="4" ncloc="4" packages="1" files="1" classes="1"/>
+    <file name="check-exits.js" path="C:\Users\TuanTQ\Desktop\javascript\js-lab\check-exits.js">
+      <metrics statements="4" coveredstatements="4" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+      <line num="2" count="9" type="cond" truecount="4" falsecount="0"/>
+      <line num="4" count="3" type="stmt"/>
+      <line num="5" count="11" type="cond" truecount="2" falsecount="0"/>
+      <line num="8" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
